@@ -1,0 +1,406 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.main_copy {
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #333333;
+}
+
+.main_copy::after {
+  content: "";
+  display: block;
+  margin: 40px auto;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  padding: 0 30px;
+}
+
+header .header_list {
+  max-width: 960px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header_list .header_name {
+  color: #fff;
+  font-size: 3.6rem;
+  font-family: Myriad Pro;
+}
+
+header .burger_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 50px;
+  right: 4vw;
+  z-index: 3;
+}
+
+header .bar {
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 30px;
+}
+
+header .bar_top {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+header .bar_bottom {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.fv {
+  background-image: url("E:/training/imgs/component (1).png");
+  background-position: center;
+  background-size: cover;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 620px;
+  text-align: center;
+  color: #fff;
+}
+
+.fv .main_name {
+  padding-top: 240px;
+  font-size: 12rem;
+}
+
+.fv .line::before, .fv .line::after {
+  content: "";
+  width: 20px;
+  color: #fff;
+}
+
+.concept {
+  padding: 80px 30px 0;
+}
+
+.concept p {
+  line-height: 25px;
+  margin: 57px 0 40px;
+  text-align: center;
+}
+
+.concept .imgs {
+  position: relative;
+  padding-bottom: 50px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.concept .imgs::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  left: -160px;
+  height: 240px;
+  width: 1280px;
+  background-color: #EDEDED;
+  z-index: -1;
+}
+
+.works_box {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.works_box .about {
+  margin-top: 150px;
+}
+
+.works_box .about p {
+  margin: 57px 0 40px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.works_box .box_right {
+  float: right;
+  margin-top: 120px;
+}
+
+.works_box .box_left {
+  display: inline-block;
+}
+
+.works_box .works_list_box {
+  max-width: 420px;
+}
+
+.works_box .works_list_box img {
+  margin-bottom: 16px;
+}
+
+.works_box .works_list_box p {
+  margin-bottom: 80px;
+  line-height: 30px;
+}
+
+.florist_box {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.florist_box .about {
+  margin-top: 150px;
+}
+
+.florist_box .about p {
+  margin: 57px 0 40px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.florist_box .flex_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.florist_box .flex_box .florist {
+  max-width: 300px;
+}
+
+.florist_box .flex_box .florist:nth-child(2) {
+  margin: 0 30px;
+}
+
+.florist_box .flex_box .name {
+  margin: 15px 0 10px;
+}
+
+.florist_box .flex_box p {
+  line-height: 30px;
+}
+
+.information_box {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+
+.information_box .about {
+  margin-top: 150px;
+}
+
+.information_box .about p {
+  margin: 57px 0 40px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.information_box .flex_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information_box .flex_box img {
+  max-width: 480px;
+}
+
+.information_box .flex_box .company_info_list {
+  padding: 32px 20px 20px 40px;
+  width: 380px;
+  border: 1px dashed #000;
+}
+
+.information_box .flex_box .company_info_list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+  height: 60px;
+  line-height: 30px;
+}
+
+.information_box .flex_box .company_info_list div .company_info_title {
+  border-right: 1px solid #000;
+  -ms-flex-preferred-size: 80px;
+      flex-basis: 80px;
+}
+
+.information_box .flex_box .company_info_list div .company_info__detail {
+  margin-left: 20px;
+}
+
+.information_box .flex_box .company_info_list .number {
+  height: 40px;
+}
+
+.contact_box {
+  padding: 80px 30px 99px;
+  background-image: url("E:/training/imgs/component.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact_box .contact p {
+  margin: 57px 0 40px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.contact_box a {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 360px;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+}
+
+footer {
+  padding: 12px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
